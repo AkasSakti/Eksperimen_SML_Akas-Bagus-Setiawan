@@ -22,5 +22,5 @@ if __name__ == "__main__":
     report = classification_report(y, y_pred, output_dict=True)
     mlflow.log_metric("accuracy", report["accuracy"])
     mlflow.sklearn.log_model(model, "model")
-    print("start retrain")
+    print("restart retrain")
     mlflow.end_run()
