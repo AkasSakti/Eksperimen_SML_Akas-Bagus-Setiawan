@@ -30,7 +30,7 @@ jobs:
       run: |
         export MLFLOW_TRACKING_URI=https://dagshub.com/AkasSakti/Eksperimen_SML_Akas-Bagus-Setiawan/.mlflow
         export MLFLOW_TRACKING_USERNAME=<AkasSakti>
-        export MLFLOW_TRACKING_PASSWORD=<77f65784ff8c1be54c8346460e9e9bf170d231db>
+        export MLFLOW_TRACKING_PASSWORD=<1c9c308840b340be11a92dba6caa3af2ae5635ed>
 
     - name: Run MLflow Project
       run: |
