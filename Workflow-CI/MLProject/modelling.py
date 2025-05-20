@@ -3,12 +3,14 @@ import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report
 import mlflow
+import os
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--data_path", type=str, default="olshopdatapreprocesed/preprocessed.csv")
     args = parser.parse_args()
-
+mlflow.set_tracking_uri("https://dagshub.com/AkasSakti/Eksperimen_SML_Akas-Bagus-Setiawan.mlflow")
+mlflow.set_experiment("online-shop-intention")
     mlflow.start_run()
 
     df = pd.read_csv(args.data_path)
