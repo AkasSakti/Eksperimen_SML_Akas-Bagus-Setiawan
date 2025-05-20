@@ -13,5 +13,5 @@ def load_and_preprocess(path):
     return df_scaled
 
 if __name__ == "__main__":
-    df_ready = load_and_preprocess("D:/nang jember/Akas Bagus Setiawan/DICODING/MSML/preprocessing/online_shoppers_intention_preprocessed.csv")
-    df_ready.to_csv("D:/nang jember/Akas Bagus Setiawan/DICODING/MSML/preprocessing/olshopdatapreprocesed/preprocessed.csv", index=False)
+    df_ready = load_and_preprocess("Eksperimen_SML_Akas-Bagus-Setiawan/preprocessing/online_shoppers_intention_preprocessed.csv")
+    df_ready.to_csv("Eksperimen_SML_Akas-Bagus-Setiawan/preprocessing/olshopdatapreprocesed/preprocessed.csv", index=False)
