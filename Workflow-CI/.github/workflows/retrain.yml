@@ -5,7 +5,7 @@ on:
     paths:
       - 'Workflow-CI/MLProject/**'
       - 'Workflow-CI/.github/workflows/retrain.yml'
-
+  workflow_dispatch:
 jobs:
   train:
     runs-on: ubuntu-latest
